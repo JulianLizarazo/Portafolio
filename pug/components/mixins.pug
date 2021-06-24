@@ -1,0 +1,8 @@
+mixin title(title) 
+    .title
+        h2.text__title #{title}
+
+mixin skill(logo,altLogo,skill)
+    li.skill-info 
+        img.skill-info__logo(src="/Portafolio/assets/"+logo, alt=altLogo)
+        h3.skill-info__title #{skill}
