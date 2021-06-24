@@ -1,0 +1,78 @@
+
+
+mixin title(title) 
+    .title
+        h2.text__title #{title}
+
+mixin skill(logo,altLogo,skill)
+    li.skill-info 
+        img.skill-info__logo(src="/Portafolio/assets/"+logo, alt=altLogo)
+        h3.skill-info__title #{skill}
+
+
+main.main 
+    section.main--presentation 
+        img.main--presentation__img(src="", alt="")
+
+        h1.main--presentation__name Julian Pinilla 
+        h2.main--presentation__animation Front-end Developer
+
+    section.main--about-me 
+        +title("Sobre mí")   
+
+        img.main--about-me__photo(src="", alt="")
+
+        p.main--about-me__info Hola! Mi nombre es Julian Camilo Pinilla Lizarazo, soy desarrollador Front-End y actualmente estudio Ingenieria de Sistemas en la Universidad de Cundinamarca. <br> Soy una persona autodidacta y apasionada por la programación. Mi objetivo es llegar a convertirme en desarrollador Full-Stack.
+
+    section.main--skills
+        +title("Front-End Skills")
+        
+
+        ul.skills-ul
+            +skill("html.png", "Html Logo", "HTML")
+            +skill("css.png", "Css Logo", "CSS")
+            +skill("pug.svg", "Pug Logo", "PUG")
+            +skill("sass.png", "Sass Logo", "SASS")
+            
+
+        +title("Back-End Skills")
+
+        ul.skills-ul
+            +skill("java.png", "Java Logo", "JAVA")
+            +skill("sql.png", "SQL Logo", "SQL")
+            
+
+        +title("Other Skills")
+            
+        ul.skills-ul 
+            +skill("git.svg", "Git Logo", "GIT")
+            +skill("figma.png", "Figma Logo", "FIGMA")
+
+    section.main--projects
+        +title("My Projects")
+
+        <!--Pendiente de revision :v (Esta es la caja que se va a animar-->
+        .main--projects__project
+            .project-img 
+                h3.project-img__title
+
+    section.main--contact   
+        +title("Contact Me")
+
+        p COMING SOON!            
+                        
+
+
+                
+
+             
+
+                
+
+                    
+
+
+                        
+
+
+
