@@ -1,11 +1,47 @@
+@import "./components/variables";
 @import "./components/global";
 @import "./components/header";
 
-
-
 .main{
-    width: 100%;
+    width: 100vw;
+    grid-row: 2 / 10;
     grid-column: 1 / 7;
+
+    &--presentation{
+        height: 383px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/Portafolio/assets/fondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+        &__img{
+            width: 200.68px;
+            max-width: 500px;
+            height: 128.6px;
+            position: relative;
+            
+
+        }
+
+        &__name{
+            position: absolute;
+            font-size: 24px;
+            color: $light-primary-color;
+            top: 205px;
+            right: 30px;
+        }
+
+        &__animation{
+            position: absolute;
+            font-size: 24px;
+            color: $light-primary-color;
+            top: 235px;
+            right: 30px;
+        }
+    }
 }
 
 .footer{

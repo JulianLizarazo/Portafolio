@@ -19,9 +19,15 @@ body {
 }
 
 .header {
+  /*Cambiar cuando se haga responsive*/
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  /*-----------------------------------*/
   background-color: #616161;
   grid-row: 1;
   grid-column: 1/7;
+  box-shadow: 1px 1px 5px #000;
 }
 .header--title {
   height: 52px;
@@ -37,6 +43,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.header--title__hamburguer {
+  transform-origin: origin;
+  transition: transform 500ms;
+}
+.header--title__hamburguer:active {
+  transform: rotate(90deg);
+}
 
 .size {
   width: 24px;
@@ -50,8 +63,38 @@ body {
 }
 
 .main {
-  width: 100%;
+  width: 100vw;
+  grid-row: 2/10;
   grid-column: 1/7;
+}
+.main--presentation {
+  height: 383px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Portafolio/assets/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main--presentation__img {
+  width: 200.68px;
+  max-width: 500px;
+  height: 128.6px;
+  position: relative;
+}
+.main--presentation__name {
+  position: absolute;
+  font-size: 24px;
+  color: #F5F5F5;
+  top: 205px;
+  right: 30px;
+}
+.main--presentation__animation {
+  position: absolute;
+  font-size: 24px;
+  color: #F5F5F5;
+  top: 235px;
+  right: 30px;
 }
 
 .footer {
