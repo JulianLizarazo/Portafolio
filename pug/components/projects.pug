@@ -1,9 +1,20 @@
 include mixins.pug 
 
+mixin project(img, altimg, title, page, repository)
+    li.main--projects__project
+            .main--projects__project-container
+                img.main--projects__project-container-img(src="/Portafolio/assets/"+img, alt=altimg)
+                h3.main--projects__project-container-title #{title}
+                .main--projects__project-container-pages
+                    a.main--projects__project-container-pages-button-page(href=page, target="_blank")
+                        button GitHub Page
+                    a.main--projects__project-container-pages-button-repository(href=repository, target="_blank")    
+                        button GitHub Repository
+
 section.main--projects
-        +title("My Projects")
+    +title("My Projects")
 
         <!--Pendiente de revision :v (Esta es la caja que se va a animar-->
-        .main--projects__project
-            .project-img 
-                h3.project-img__title
+        
+    ul.main--projects__ul 
+        +project("batatabit.png", "Batatabit image", "Batatabit", "https://julianlizarazo.github.io/Bata-bit/", "https://github.com/JulianLizarazo/Bata-bit")
