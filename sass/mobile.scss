@@ -3,11 +3,13 @@
 @import "./components/header";
 
 .main{
+    
     width: 100vw;
     grid-row: 2 / 10;
     grid-column: 1 / 7;
 
     &--presentation{
+        
         height: 383px;
         display: flex;
         justify-content: center;
@@ -18,6 +20,7 @@
         
 
         &__img{
+            
             width: 200.68px;
             max-width: 500px;
             height: 128.6px;
@@ -27,10 +30,11 @@
         }
 
         &__name{
+        
             position: absolute;
-            font-size: 24px;
+            font-size: 28px;
             color: $light-primary-color;
-            top: 205px;
+            top: 200px;
             right: 30px;
         }
 
@@ -41,6 +45,83 @@
             top: 235px;
             right: 30px;
         }
+    }
+
+    &--about-me{
+        background-color: $light-primary-color;
+        width: 100vw;
+        height: 444px;
+        text-align: center;
+
+        &__photo{
+            
+            margin: 23.92px 0 19px 0;
+            width: 96px;
+            height: 86px;
+        }
+
+        &__info{
+            margin: 0 30px 0 30px;
+        }
+
+    }
+
+    &--skills{
+        width: 100vw;
+        height: 912px;
+        background-color: $dark-primary-color;
+
+        & .title{
+            color: $light-primary-color;
+            border-color: $light-primary-color;
+        }
+    }
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 0 45px;
+    padding-block-end: 9px;
+    border-block-end: 1px solid $primary-text;
+    
+}
+
+.text__title{
+    margin-block-start: 21px;
+    font-size: 20px;
+}
+
+
+
+.skills-ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 140px;
+    margin: 48px 40px 83px 48px;
+
+    
+}
+
+.skill-info{
+    flex: 0 0 auto;
+    width: 84px;
+    height: 137px;
+    list-style: none;
+    margin-inline-end: 42px;
+    text-align: center;
+    
+
+    &__logo{
+        width: 84px;
+        height: 96px;
+    }
+
+    &__title{
+        margin-block-start: 16px;
+        color: $light-primary-color;
+        font-size: 20px;
     }
 }
 
