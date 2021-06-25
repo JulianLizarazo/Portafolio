@@ -2,13 +2,18 @@
 
 .header{
     
+    /*Cambiar cuando se haga responsive*/
     width: 100vw;
     position: fixed;
     top: 0;
+    /*-----------------------------------*/
     background-color: $dark-primary-color;
     grid-row: 1;
     grid-column: 1 / 7;
-    box-shadow: 1px 1px 5px $dark-primary-color;
+    box-shadow: 1px 1px 5px #000;
+    
+
+    
     
     
     
@@ -26,6 +31,15 @@
             align-items: center;
             justify-content: space-between;
             
+        }
+
+        &__hamburguer{
+            transform-origin: origin;
+            transition: transform 500ms;
+
+            &:active{
+                transform: rotate(90deg);
+            }
         }
     }
 }

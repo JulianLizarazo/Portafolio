@@ -1,11 +1,13 @@
 .header {
+  /*Cambiar cuando se haga responsive*/
   width: 100vw;
   position: fixed;
   top: 0;
+  /*-----------------------------------*/
   background-color: #616161;
   grid-row: 1;
   grid-column: 1/7;
-  box-shadow: 1px 1px 5px #616161;
+  box-shadow: 1px 1px 5px #000;
 }
 .header--title {
   height: 52px;
@@ -20,6 +22,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header--title__hamburguer {
+  transform-origin: origin;
+  transition: transform 500ms;
+}
+.header--title__hamburguer:active {
+  transform: rotate(90deg);
 }
 
 .size {
