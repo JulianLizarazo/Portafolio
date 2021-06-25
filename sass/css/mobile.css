@@ -27,6 +27,7 @@ body {
   background-color: #616161;
   grid-row: 1;
   grid-column: 1/7;
+  z-index: 3;
   box-shadow: 1px 1px 5px #000;
 }
 .header--title {
