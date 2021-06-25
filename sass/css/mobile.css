@@ -5,6 +5,55 @@
 }
 
 body {
-  height: 100%;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: 52px 383px 57px 388px 57px 855px 57px 208px 57px 184px 88px;
+  grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+  column-gap: 10px;
+  /*grid-template-areas: 
+  "title title title  no no hamburguer"
+  " no   prese prese  prese prese no"
+  " no   about about  about about no"
+  " no   ";*/
+  background-color: #607D8B;
+}
+
+.header {
+  background-color: #616161;
+  grid-row: 1;
+  grid-column: 1/7;
+}
+.header--title {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 11px;
+  align-items: center;
+}
+.header--title__name {
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.size {
+  width: 24px;
+  height: 24px;
+}
+
+.title__name-name {
+  color: #F5F5F5;
+  font-size: 18px;
+  font-weight: 70%;
+}
+
+.main {
   width: 100%;
+  grid-column: 1/7;
+}
+
+.footer {
+  grid-column: 1/7;
 }

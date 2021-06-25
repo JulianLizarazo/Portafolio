@@ -1,0 +1,34 @@
+$font-family: 'Roboto', sans-serif;
+$primary-color: #9E9E9E;
+$light-primary-color: #F5F5F5;
+$dark-primary-color: #616161;
+$secondary-text: #757575;
+$primary-text: #212121;
+$accent-color: #607D8B;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: $font-family;
+    display: grid;
+    grid-template-rows: 52px 383px 57px 388px 57px 855px 57px 208px
+    57px 184px 88px;
+    grid-template-columns: repeat(auto-fit, minmax(45px,1fr));
+    column-gap: 10px;
+    /*grid-template-areas: 
+    "title title title  no no hamburguer"
+    " no   prese prese  prese prese no"
+    " no   about about  about about no"
+    " no   ";*/
+    background-color: $accent-color;
+    
+    
+    
+}

@@ -1,0 +1,35 @@
+.header{
+    
+    background-color: $dark-primary-color;
+    grid-row: 1;
+    grid-column: 1 / 7;
+    
+    &--title{
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 11px;
+        align-items: center;
+
+        &__name{
+            min-width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+    }
+}
+
+.size{
+    width: 24px;
+    height: 24px;
+}
+
+.title__name-name{
+    color: $light-primary-color;
+    font-size: 18px;
+    font-weight: 70%;
+    
+}
