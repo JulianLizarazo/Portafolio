@@ -1,0 +1,20 @@
+.footer {
+  grid-column: 1/7;
+  grid-row: 11/12;
+  width: 100vw;
+  height: 88px;
+  background-color: #616161;
+}
+.footer--credits {
+  display: inline-block;
+  margin: 23px 0 0 15px;
+  color: #F5F5F5;
+  line-height: 22px;
+}
+.footer--github {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  margin-block-start: 23px;
+  right: 15px;
+}

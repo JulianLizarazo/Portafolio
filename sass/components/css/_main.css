@@ -1,0 +1,112 @@
+.main {
+  width: 100vw;
+  grid-row: 2/10;
+  grid-column: 1/7;
+}
+.main--presentation {
+  height: 383px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Portafolio/assets/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main--presentation__img {
+  width: 200.68px;
+  max-width: 500px;
+  height: 128.6px;
+  position: relative;
+}
+.main--presentation__name {
+  position: absolute;
+  font-size: 28px;
+  color: #F5F5F5;
+  top: 200px;
+  right: 30px;
+}
+.main--presentation__animation {
+  position: absolute;
+  font-size: 24px;
+  color: #F5F5F5;
+  top: 235px;
+  right: 30px;
+}
+.main--about-me {
+  background-color: #F5F5F5;
+  width: 100vw;
+  height: 444px;
+  text-align: center;
+}
+.main--about-me__photo {
+  margin: 23.92px 0 19px 0;
+  width: 96px;
+  height: 86px;
+}
+.main--about-me__info {
+  margin: 0 30px 0 30px;
+}
+.main--skills {
+  width: 100vw;
+  height: 952px;
+  background-color: #616161;
+}
+.main--projects {
+  width: 100vw;
+  height: 267px;
+  background-color: #212121;
+}
+.main--contact {
+  width: 100vw;
+  height: 245px;
+  background-color: #F5F5F5;
+}
+.main--contact p {
+  text-align: center;
+  margin-block-start: 60px;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0 45px;
+  padding-block-end: 9px;
+  border-block-end: 1px solid #212121;
+}
+
+.text__title {
+  margin-block-start: 21px;
+  font-size: 20px;
+}
+
+.main--skills .title, .main--projects .title {
+  color: #F5F5F5;
+  border-color: #F5F5F5;
+}
+
+.skills-ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 140px;
+  margin: 48px 40px 83px 48px;
+}
+
+.skill-info {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 137px;
+  list-style: none;
+  margin-inline-end: 42px;
+  text-align: center;
+}
+.skill-info__logo {
+  width: 84px;
+  height: 96px;
+}
+.skill-info__title {
+  margin-block-start: 16px;
+  color: #F5F5F5;
+  font-size: 20px;
+}
