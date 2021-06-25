@@ -1,0 +1,34 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #616161;
+  grid-row: 1;
+  grid-column: 1/7;
+  box-shadow: 1px 1px 5px #616161;
+}
+.header--title {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 11px;
+  align-items: center;
+}
+.header--title__name {
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.size {
+  width: 24px;
+  height: 24px;
+}
+
+.title__name-name {
+  color: #F5F5F5;
+  font-size: 18px;
+  font-weight: 70%;
+}
