@@ -68,13 +68,28 @@
 
     &--skills{
         width: 100vw;
-        height: 912px;
+        height: 952px;
         background-color: $dark-primary-color;
 
-        & .title{
-            color: $light-primary-color;
-            border-color: $light-primary-color;
+    }
+
+    &--projects{
+        width: 100vw;
+        height: 267px;
+        background-color: $primary-text;
+    }
+
+    &--contact{
+        width: 100vw;
+        height: 245px;
+        background-color: $light-primary-color;
+
+        & p{
+            text-align: center;
+            margin-block-start: 60px;
+            font-weight: bold;
         }
+
     }
 }
 
@@ -92,6 +107,10 @@
     font-size: 20px;
 }
 
+.main--skills .title, .main--projects .title{
+    color: $light-primary-color;
+    border-color: $light-primary-color;
+}
 
 
 .skills-ul{
@@ -127,4 +146,21 @@
 
 .footer{
     grid-column: 1 / 7;
+    grid-row: 11 / 12;
+    width: 100vw;
+    height: 88px;
+    background-color: $dark-primary-color;
+
+    &--credits{
+        display: inline-block;
+        margin: 23px 70px 0 15px;
+        color: $light-primary-color;
+        line-height: 22px;
+        
+    }
+    
+    &--github{
+        width: 32px;
+        height: 32px;
+    }
 }
