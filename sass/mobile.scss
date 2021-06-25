@@ -153,7 +153,7 @@
 
     &--credits{
         display: inline-block;
-        margin: 23px 85px 0 15px;
+        margin: 23px 0 0 15px;
         color: $light-primary-color;
         line-height: 22px;
         
@@ -162,5 +162,9 @@
     &--github{
         width: 32px;
         height: 32px;
+        position: absolute;
+        margin-block-start: 23px;
+        right: 15px;
+        
     }
 }

@@ -184,11 +184,14 @@ body {
 }
 .footer--credits {
   display: inline-block;
-  margin: 23px 85px 0 15px;
+  margin: 23px 0 0 15px;
   color: #F5F5F5;
   line-height: 22px;
 }
 .footer--github {
   width: 32px;
   height: 32px;
+  position: absolute;
+  margin-block-start: 23px;
+  right: 15px;
 }
