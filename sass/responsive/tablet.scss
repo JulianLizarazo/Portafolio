@@ -1,0 +1,88 @@
+@import "../mobile.scss";
+
+@mixin center(){
+    display: flex;
+    justify-content: center;
+}
+
+.main--presentation{
+
+    &__name{
+        font-size: 60px;
+    }
+
+    &__animation{
+        font-size: 30px;
+        margin: 0 auto;
+        margin-block-start: 20px;
+        width: 300px;
+        
+        //position: relative;
+        /*& span{
+            position: absolute;
+            //right: 0px;
+            width: 0;
+            background-color: $accent-color;
+            border-left: 1px solid $light-primary-color;
+            animation: text 3s infinite alternate steps(29);
+            
+        }*/
+    }
+
+    &__list{
+        justify-content: space-evenly;
+    }
+}
+
+.text__title{
+    font-size: 30px;
+}
+
+.main--about-me{
+    
+    &__photo{
+        width: 120px;
+        height: 120px;
+        margin: 90px 0 50px 90px;
+        
+    }
+
+    &__info{
+        text-align: left;
+        width: 300px;
+        margin: 60px 20px 0 80px;
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+}
+
+.main--skills{
+    
+    .skills-ul{
+        //quitar esto cuando hayan muchos, para
+        //que funcione el scroll horizontal
+        @include center;
+  
+        
+    }
+}
+
+.main--projects{
+
+    &__ul{
+        @include center;
+    }
+}
+
+/*@keyframes text{
+    from {
+        width: 281.25px;
+    }
+
+    to{
+        width: 0;
+        
+    }
+}*/
+

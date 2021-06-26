@@ -8,9 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/Portafolio/assets/fondo.jpg");
+  /*background-image: url("/Portafolio/assets/fondo.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: #607D8B;
 }
 .main--presentation__box {
   width: 80%;
@@ -25,6 +26,7 @@
 .main--presentation__animation {
   text-align: center;
   margin-block-start: 20px;
+  padding-inline-start: 15px;
   color: #F5F5F5;
 }
 .main--presentation__list {

@@ -73,9 +73,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/Portafolio/assets/fondo.jpg");
+  /*background-image: url("/Portafolio/assets/fondo.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: #607D8B;
 }
 .main--presentation__box {
   width: 80%;
@@ -90,6 +91,7 @@ body {
 .main--presentation__animation {
   text-align: center;
   margin-block-start: 20px;
+  padding-inline-start: 15px;
   color: #F5F5F5;
 }
 .main--presentation__list {
@@ -250,3 +252,63 @@ body {
   margin-block-start: 23px;
   right: 15px;
 }
+
+.main--presentation__name {
+  font-size: 60px;
+}
+.main--presentation__animation {
+  font-size: 30px;
+  margin: 0 auto;
+  margin-block-start: 20px;
+  width: 300px;
+  /*& span{
+      position: absolute;
+      //right: 0px;
+      width: 0;
+      background-color: $accent-color;
+      border-left: 1px solid $light-primary-color;
+      animation: text 3s infinite alternate steps(29);
+
+  }*/
+}
+.main--presentation__list {
+  justify-content: space-evenly;
+}
+
+.text__title {
+  font-size: 30px;
+}
+
+.main--about-me__photo {
+  width: 120px;
+  height: 120px;
+  margin: 90px 0 50px 90px;
+}
+.main--about-me__info {
+  text-align: left;
+  width: 300px;
+  margin: 60px 20px 0 80px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.main--skills .skills-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.main--projects__ul {
+  display: flex;
+  justify-content: center;
+}
+
+/*@keyframes text{
+    from {
+        width: 281.25px;
+    }
+
+    to{
+        width: 0;
+
+    }
+}*/

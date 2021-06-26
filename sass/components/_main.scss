@@ -12,9 +12,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("/Portafolio/assets/fondo.jpg");
+        /*background-image: url("/Portafolio/assets/fondo.jpg");
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
+        background-color: $accent-color;
         
         &__box{
             width: 80%;
@@ -32,6 +33,7 @@
         &__animation{
             text-align: center;
             margin-block-start: 20px;
+            padding-inline-start: 15px;
             color: $light-primary-color;
         }
 
