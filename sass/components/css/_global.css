@@ -1,15 +1,15 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   display: grid;
+  width: 100%;
   grid-template-rows: 52px 383px 57px 388px 57px 855px 57px 208px 57px 358px 88px;
   grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-  column-gap: 10px;
   /*grid-template-areas: 
   "title title title  no no hamburguer"
   " no   prese prese  prese prese no"

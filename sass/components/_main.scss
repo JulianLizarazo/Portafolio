@@ -2,7 +2,7 @@
 
 .main{
     
-    width: 100vw;
+    width: 100%;
     grid-row: 2 / 10;
     grid-column: 1 / 7;
 
@@ -16,38 +16,50 @@
         background-size: cover;
         background-repeat: no-repeat;
         
-
-        &__img{
-            
-            width: 200.68px;
-            max-width: 500px;
-            height: 128.6px;
-            position: relative;
-            
-
+        &__box{
+            width: 80%;
+            height: 200px;
+        
         }
 
         &__name{
-        
-            position: absolute;
-            font-size: 28px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
             color: $light-primary-color;
-            top: 200px;
-            right: 30px;
         }
 
         &__animation{
-            position: absolute;
-            font-size: 24px;
+            text-align: center;
+            margin-block-start: 20px;
             color: $light-primary-color;
-            top: 235px;
-            right: 30px;
         }
+
+        &__list{
+            width: 80%;
+            height: 60px;
+            margin: 40px auto 0 auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+
+        &__li{
+            list-style: none;
+
+            &-img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+
+        
     }
 
     &--about-me{
         background-color: $light-primary-color;
-        width: 100vw;
+        width: 100%;
         height: 444px;
         text-align: center;
 
@@ -65,14 +77,14 @@
     }
 
     &--skills{
-        width: 100vw;
+        width: 100%;
         height: 952px;
         background-color: $dark-primary-color;
 
     }
 
     &--projects{
-        width: 100vw;
+        width: 100%;
         height: 407px;
         background-color: $primary-text;
 
@@ -139,7 +151,7 @@
     }
 
     &--contact{
-        width: 100vw;
+        width: 100%;
         height: 245px;
         background-color: $light-primary-color;
 
@@ -151,6 +163,7 @@
 
     }
 }
+
 
 .title{
     display: flex;

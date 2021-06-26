@@ -2,11 +2,16 @@ include mixins.pug
 
 main.main 
     section.main--presentation
-         
-        img.main--presentation__img(src="/Portafolio/assets/figmafigure.svg", alt="Combinated squares")
-
-        h1.main--presentation__name Julian Pinilla 
-        h2.main--presentation__animation Front-end <br> Developer
+        .main--presentation__box
+            h1.main--presentation__name Julian Pinilla 
+            h2.main--presentation__animation Front-end Developer
+            ul.main--presentation__list
+                li.main--presentation__li
+                    img.main--presentation__li-img(src="/Portafolio/assets/github.png", alt="Github Icon")
+                li.main--presentation__li
+                    img.main--presentation__li-img(src="/Portafolio/assets/linkedin.svg", alt="Linkedin Icon")
+        
+            
 
     section.main--about-me 
         +title("About Me")   

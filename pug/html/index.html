@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Portafolio/sass/css/mobile.css">
+    <link rel="stylesheet" href="/Portafolio/sass/css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="/Portafolio/sass/responsive/css/mobileL.css" media="screen and (min-width: 768px)">
     <link rel="shortcut icon" href="/Portafolio/assets/code.svg" type="image/x-icon">
     <title>Julian Pinilla - Portafolio</title>
   </head>
@@ -20,9 +21,15 @@
       </nav>
     </header>
     <main class="main"> 
-      <section class="main--presentation"><img class="main--presentation__img" src="/Portafolio/assets/figmafigure.svg" alt="Combinated squares">
-        <h1 class="main--presentation__name">Julian Pinilla </h1>
-        <h2 class="main--presentation__animation">Front-end <br> Developer</h2>
+      <section class="main--presentation">
+        <div class="main--presentation__box">
+          <h1 class="main--presentation__name">Julian Pinilla </h1>
+          <h2 class="main--presentation__animation">Front-end Developer</h2>
+          <ul class="main--presentation__list">
+            <li class="main--presentation__li"><img class="main--presentation__li-img" src="/Portafolio/assets/github.png" alt="Github Icon"></li>
+            <li class="main--presentation__li"><img class="main--presentation__li-img" src="/Portafolio/assets/linkedin.svg" alt="Linkedin Icon"></li>
+          </ul>
+        </div>
       </section>
       <section class="main--about-me"> 
             <div class="title">
