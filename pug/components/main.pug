@@ -1,7 +1,7 @@
 include mixins.pug
 
-main.main 
-    section.main--presentation
+main.main
+    section.main--presentation#index
         .main--presentation__box
             h1.main--presentation__name Julian Pinilla 
             h2.main--presentation__animation Front-end Developer. <span>&#160;</span>
@@ -10,23 +10,24 @@ main.main
                     img.main--presentation__li-img(src="/Portafolio/assets/github.png", alt="Github Icon")
                 li.main--presentation__li
                     img.main--presentation__li-img(src="/Portafolio/assets/linkedin.svg", alt="Linkedin Icon")
-        
+            <br><span id="about-me">
             
-
-    section.main--about-me 
-        +title("About Me")   
+    
+    section.main--about-me
+        +title("About Me")
 
         img.main--about-me__photo(src="/Portafolio/assets/userphoto.png", alt="User Photo")
 
-        p.main--about-me__info Hi! I'm Julian Camilo Pinilla Lizarazo, i'm frontend developer and actually i'm studying System Engineering at Cundinamarca University. <br><br> I'm a autodidact and passionate for programming world. My goal is become in Fullstack developer.
+        p.main--about-me__info#skills Hi! I'm Julian Camilo Pinilla Lizarazo, i'm frontend developer and actually i'm studying System Engineering at Cundinamarca University. <br><br> I'm a autodidact and passionate for programming world. My goal is become in Fullstack developer.
 
+        
     
     include skills.pug
-
+    
     include projects.pug
     
 
-    section.main--contact   
+    section.main--contact#contact-me   
         +title("Contact Me")
 
         p COMING SOON!            

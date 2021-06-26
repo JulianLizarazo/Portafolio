@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: grid;
   width: 100%;
-  grid-template-rows: 52px 383px 57px 388px 57px 855px 57px 208px 57px 358px 88px;
+  grid-template-rows: 52px 383px 57px 388px 57px 855px 57px 208px 57px 450px 88px;
   grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
   /*grid-template-areas: 
   "title title title  no no hamburguer"

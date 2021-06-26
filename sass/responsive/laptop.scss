@@ -1,0 +1,102 @@
+@import "./tablet.scss";
+
+.header--title{
+
+
+    &__ul{
+        display: flex;
+
+    }
+
+    &__li{
+        list-style: none;
+        font-size: 20px;
+        margin-inline-end: 20px;
+
+        & a{
+            text-decoration: none;
+            color: $light-primary-color;
+            background-image: linear-gradient($light-primary-color, $light-primary-color);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+
+            &:hover, a:focus{
+                background-size: 100% 2px;
+            }
+        }
+    }
+
+    &__hamburguer{
+        display: none;
+    }
+}
+
+
+.main--presentation{
+    
+
+    &__animation{
+        position: relative;
+        & span{
+            position: absolute;
+            right: 0px;
+            width: 0;
+            background-color: $accent-color;
+            border-left: 1px solid $light-primary-color;
+            animation: text 3s infinite alternate steps(29);
+            
+        }
+    }
+}
+
+@keyframes text{
+    from {
+        width: 281.25px;
+    }
+
+    to{
+        width: 0;
+        
+    }
+}
+
+
+.main--skills{
+
+    .skill-info__logo{
+        transform-origin: top;
+        transition: transform 500ms;
+
+        &:hover{
+            transform: scaleY(1.2) scaleX(1.2);
+    
+        }
+    }
+}
+
+.main--projects{
+    height: 500px;
+    &__ul{
+        height: 450px;
+    }
+
+    &__project-container{
+        transform-origin: top;
+        transition: transform 500ms;
+    
+        &:hover{
+             transform: scaleY(1.2) scaleX(1.2);
+        
+        }
+
+        
+        &-pages button{
+            cursor: pointer;
+        }
+    }
+
+    
+}
+

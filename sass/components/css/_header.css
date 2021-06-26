@@ -24,12 +24,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.header--title__name a {
+  text-decoration: none;
+}
+.header--title__ul {
+  display: none;
+}
 .header--title__hamburguer {
   transform-origin: origin;
-  transition: transform 500ms;
-}
-.header--title__hamburguer:active {
-  transform: rotate(90deg);
 }
 
 .size {

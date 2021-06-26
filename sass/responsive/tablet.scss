@@ -16,17 +16,6 @@
         margin: 0 auto;
         margin-block-start: 20px;
         width: 300px;
-        
-        //position: relative;
-        /*& span{
-            position: absolute;
-            //right: 0px;
-            width: 0;
-            background-color: $accent-color;
-            border-left: 1px solid $light-primary-color;
-            animation: text 3s infinite alternate steps(29);
-            
-        }*/
     }
 
     &__list{
@@ -75,14 +64,4 @@
     }
 }
 
-/*@keyframes text{
-    from {
-        width: 281.25px;
-    }
-
-    to{
-        width: 0;
-        
-    }
-}*/
 

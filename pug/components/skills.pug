@@ -3,7 +3,8 @@
 include mixins.pug
 
 
-section.main--skills
+section.main--skills#skills
+        
         +title("Front-End Skills")
         
 
@@ -19,7 +20,7 @@ section.main--skills
             
 
         +title("Back-End Skills")
-
+        
         ul.skills-ul
             +skill("java.png", "Java Logo", "JAVA")
             +skill("sql.svg", "SQL Logo", "SQL")
@@ -31,4 +32,5 @@ section.main--skills
         ul.skills-ul 
             +skill("git.svg", "Git Logo", "GIT")
             +skill("figma.png", "Figma Logo", "FIGMA")
+        
 
