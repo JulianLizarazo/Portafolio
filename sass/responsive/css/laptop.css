@@ -222,7 +222,7 @@ body {
 
 .skill-info {
   flex: 0 0 auto;
-  width: 84px;
+  width: 120px;
   height: 137px;
   list-style: none;
   margin-inline-end: 42px;
@@ -292,6 +292,10 @@ body {
 .main--skills .skills-ul {
   display: flex;
   justify-content: center;
+}
+
+.skill-info {
+  width: 120px;
 }
 
 .main--projects__ul {
