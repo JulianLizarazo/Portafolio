@@ -11,4 +11,4 @@ This page was made using:
 - Semantic HTML
 
 
-You can take a look of my portfolio [**here**](https://julianlizarazo.github.io/portafolio/ "here")
+You can take a look of my portfolio [**here**](https://julianlizarazo.github.io/Portafolio/ "here")
